@@ -1,1 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    background: linear-gradient(135deg, #6c5ce7, #8e44ad);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+nav h2 {
+    color: white;
+    font-size: 26px;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffeaa7;
+}
+
+/* HOME */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #eee9ff,
+        #fcecff
+    );
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #5b42c7;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 21px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.btn,
+button {
+    display: inline-block;
+    background: linear-gradient(
+        135deg,
+        #6c5ce7,
+        #8e44ad
+    );
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108,92,231,0.35);
+}
+
+/* TITLE */
+
+.title {
+    text-align: center;
+    color: #5b42c7;
+    margin: 40px 0 25px;
+    font-size: 32px;
+}
+
+/* PRODUCTS */
+
+.products {
+    width: 86%;
+    margin: auto;
+    padding: 10px 0 50px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 28px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 16px 10px 8px;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+    margin: 8px 15px 18px;
+    line-height: 1.5;
+}
+
+/* FORM */
+
+.form-box {
+    width: 400px;
+    max-width: 90%;
+    margin: 70px auto;
+
+    background: white;
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+.form-box h2 {
+    color: #5b42c7;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.form-box p {
+    margin-top: 18px;
+    color: #666;
+}
+
+.form-box a {
+    color: #6c5ce7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    padding: 13px 15px;
+    margin: 9px 0;
+
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108,92,231,0.2);
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* ERROR / SUCCESS */
+
+.error {
+    color: #e74c3c !important;
+    font-weight: bold;
+}
+
+.success {
+    color: #27ae60 !important;
+    font-weight: bold;
+}
+
+/* PRODUCT DETAILS */
+
+.details {
+    width: 80%;
+    margin: 60px auto;
+
+    background: white;
+    padding: 45px;
+
+    border-radius: 18px;
+
+    display: flex;
+    gap: 55px;
+    align-items: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.details img {
+    width: 430px;
+    height: 350px;
+
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.details h1 {
+    color: #5b42c7;
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.details h2 {
+    color: #e67e22;
+    margin: 20px 0;
+}
+
+.details p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.details a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TABLE */
+
+table {
+    width: 86%;
+    margin: 30px auto;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+th {
+    background: linear-gradient(
+        135deg,
+        #6c5ce7,
+        #8e44ad
+    );
+
+    color: white;
+    padding: 16px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f8f6ff;
+}
+
+td input {
+    width: 80px;
+    text-align: center;
+}
+
+td button {
+    padding: 8px 13px;
+    font-size: 13px;
+}
+
+/* TOTAL */
+
+.total {
+    text-align: center;
+    color: #5b42c7;
+    margin: 30px;
+}
+
+/* CENTER */
+
+.center {
+    text-align: center;
+    margin: 30px;
+}
+
+/* ADMIN */
+
+.admin-box {
+    width: 500px;
+    max-width: 90%;
+
+    margin: 30px auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,0.1);
+}
+
+.admin-box h2 {
+    color: #5b42c7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-box button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* DELETE */
+
+.delete {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete:hover {
+    color: #c0392b;
+}
+
+/* FOOTER STYLE IF NEEDED */
+
+footer {
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    background: #2d3436;
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .details {
+        width: 90%;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .details img {
+        width: 100%;
+        height: 280px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+}
