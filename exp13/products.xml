@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+
+    <product>
+        <id>101</id>
+        <name>Smart Watch</name>
+        <category>Electronics</category>
+        <price>2500</price>
+        <stock>10</stock>
+    </product>
+
+    <product>
+        <id>102</id>
+        <name>Bluetooth Headphones</name>
+        <category>Electronics</category>
+        <price>1500</price>
+        <stock>15</stock>
+    </product>
+
+    <product>
+        <id>103</id>
+        <name>Wireless Mouse</name>
+        <category>Computer Accessories</category>
+        <price>800</price>
+        <stock>20</stock>
+    </product>
+
+    <product>
+        <id>104</id>
+        <name>Laptop Bag</name>
+        <category>Accessories</category>
+        <price>1200</price>
+        <stock>8</stock>
+    </product>
+
+    <product>
+        <id>105</id>
+        <name>USB Cable</name>
+        <category>Accessories</category>
+        <price>350</price>
+        <stock>25</stock>
+    </product>
+
+</products>

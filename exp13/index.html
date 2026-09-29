@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>Online Shopping Application</h1>
+        <p>XML and AJAX Based Shopping System</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Product List</h2>
+
+        <button onclick="loadProducts()">
+            Load Products
+        </button>
+
+        <br><br>
+
+        <input type="text"
+               id="search"
+               placeholder="Search product..."
+               onkeyup="searchProduct()">
+
+        <div id="products">
+            <p>Click "Load Products" to view products.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
