@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booking</title>
 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .container {
+            width: 450px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4b4b9b;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #4b5dcc;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Ticket Booking</h1>
+
+    <form action="BookingServlet" method="post">
+
+        <label>Passenger Name</label>
+        <input type="text" name="name" required>
+
+        <label>Source</label>
+        <input type="text" name="source" required>
+
+        <label>Destination</label>
+        <input type="text" name="destination" required>
+
+        <label>Travel Date</label>
+        <input type="date" name="date" required>
+
+        <label>Seat Number</label>
+        <input type="text" name="seat" required>
+
+        <label>Fare</label>
+        <input type="number" name="fare" required>
+
+        <input type="submit" value="Book Ticket" class="btn">
+
+    </form>
+
+</div>
+
+</body>
+</html>
